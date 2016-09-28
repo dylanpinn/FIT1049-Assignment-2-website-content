@@ -13,6 +13,9 @@ git add -A
 git config user.name "Travis CI"
 git config user.email "dylan.pinn@gmail.com"
 
+git remote rm origin
+git remote add origin https://the-mysterious-larks:${GH_TOKEN}@github.com/the-mysterious-larks/the-mysterious-larks.github.io.git
+
 # Commit changes.
 msg="rebuilding site `date`"
 if [ $# -eq 1 ]
