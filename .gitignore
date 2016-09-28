@@ -2,4 +2,4 @@
 
 ### Hugo ###
 hugo.exe
-/public/
+# /public/
