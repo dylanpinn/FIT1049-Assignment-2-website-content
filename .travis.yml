@@ -1,6 +1,11 @@
 language: go
 install: go get -v github.com/spf13/hugo
 script:
-  - hugo
+- hugo
 after_success:
-  - ./deploy.sh
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - "./deploy.sh"
+env:
+  global:
+    secure: 0zjgXPaedWCP4j86RfFJUV4XpRA+VcXng7dKml3D755tXobMZHk1VVedgcVLxPqmXBPHct+Es8UWZgRXSv79IiJZViSr+qAqzErVojrbZJgsnXXDfpX9uQD43srmVE9tz+43iK5xyu66sc7Ac5kXeRrVf8ksPNVR1gUpm843oTyFvHARNSl0nhBep8uuHrdXY0Rxx0ISKHzf7V0fe0qTdzbfHIaVVsKCduyzRummsWpOI8FmVgvKsO38a+NSIR3CjLjwNvNQuesQiBdZYC/LHTWdvFMvUFwm9iduE8uUZTfErleoaReIQhJk0YGXSMWdGT8iRYPRCadqrU8QcNlaWGBU0/x0AwjXdgSAAp8I9oZV91VWOXwYsoO9YknSeVP55JBgqD5XYA5Teqegg6UtjDtAYAc6Htms8ZGgj3D4xP9NS6oe5P32Cnj05JWQl1KaJ67GQz0A0m5RRK9fSL95nt6Q2Nvvk8eUCgaDE+iFbfV0MOadSDnMVgyZ/D3nr6Rx6zgFs0a81qNUH6vugwI9Aqvs6EB2gWwltgLmX6xPAEUQcxcxc2OIAm2yyfaf7+PiaqUYoMNQYmmDKINFZLgRAANRQtBdt9dUpNky5sR6wHazrfiUVwhIzR41WrrgSXPcXiAzPucZeoRhDx4mJMT7cSZXxEkd2lV0/bSES/fQLWU=

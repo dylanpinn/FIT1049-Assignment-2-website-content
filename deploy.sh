@@ -9,6 +9,10 @@ cd public
 # Add changes to git.
 git add -A
 
+# Add git config
+git config user.name "Travis CI"
+git config user.email "dylan.pinn@gmail.com"
+
 # Commit changes.
 msg="rebuilding site `date`"
 if [ $# -eq 1 ]
