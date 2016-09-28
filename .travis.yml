@@ -3,7 +3,11 @@ install: go get -v github.com/spf13/hugo
 script:
 - hugo
 after_success:
-  - "./deploy.sh"
+- "./deploy.sh"
 env:
   global:
-    secure: 0zjgXPaedWCP4j86RfFJUV4XpRA+VcXng7dKml3D755tXobMZHk1VVedgcVLxPqmXBPHct+Es8UWZgRXSv79IiJZViSr+qAqzErVojrbZJgsnXXDfpX9uQD43srmVE9tz+43iK5xyu66sc7Ac5kXeRrVf8ksPNVR1gUpm843oTyFvHARNSl0nhBep8uuHrdXY0Rxx0ISKHzf7V0fe0qTdzbfHIaVVsKCduyzRummsWpOI8FmVgvKsO38a+NSIR3CjLjwNvNQuesQiBdZYC/LHTWdvFMvUFwm9iduE8uUZTfErleoaReIQhJk0YGXSMWdGT8iRYPRCadqrU8QcNlaWGBU0/x0AwjXdgSAAp8I9oZV91VWOXwYsoO9YknSeVP55JBgqD5XYA5Teqegg6UtjDtAYAc6Htms8ZGgj3D4xP9NS6oe5P32Cnj05JWQl1KaJ67GQz0A0m5RRK9fSL95nt6Q2Nvvk8eUCgaDE+iFbfV0MOadSDnMVgyZ/D3nr6Rx6zgFs0a81qNUH6vugwI9Aqvs6EB2gWwltgLmX6xPAEUQcxcxc2OIAm2yyfaf7+PiaqUYoMNQYmmDKINFZLgRAANRQtBdt9dUpNky5sR6wHazrfiUVwhIzR41WrrgSXPcXiAzPucZeoRhDx4mJMT7cSZXxEkd2lV0/bSES/fQLWU=
+    - secure: "WBZX/bEsKDMjlhPAcArTSRIX7OiXWryzAie6WHw1wtn+yOaMV8jEBIvBkoYkRbMl3qHlJ/LZh6mjVv/xNs6s6j0R/Kg03mZkFanUNK2InwTx+Crg3KZF+6GDC0aO7dFVdTyDQY9AzQAlk8r1RmptfuDRtFemIJXWyUXz8dGQ/2+FMsyu9lADiCJghlFBJC9hBeYhdx8Ig/d/Vs3d8oYZUq2Gl2Qzdsf31vV0Zfod4gasf3/mCcquu0xqzhLBasnr0vNDe9TQoci0EVyLYejXeLG8IsJFsUPLdEFb9I4hg7b/4k2oyufenDY0vRgXA+/m96VDJjizrga89nzIH4Eu4uXh/qSi60j/6vCoD3RKXEcTxsjUJ/3QVsAkGMu2iSqZtLwvxx6uumRYJeVUziJuFcmrsjE0mHMg4FQSYEWKvZuYCQ5dhL2v2umVXVkF3StHr9RKzhApPo12F+a/48sc3qC+EWuzwRFWY+Qu/s2429l3K9ZLRh91E1+sbZmpe3mOh2fc3O16bnlOPYqoUYMyT6ZoNthisbnJFyrjn6wLfWy+vp/QKO/o3i3DqO28W31EoCn5+DYNmgHbhxHavHEtctEHPhgGbeFXbgIEHsOAs75Pks9kIvquiwQ+lneR4/KdrP/x676NI4XbICm7I0AZBwkmmbeKiwAiDAfpEPA14xM="
+    - GIT_DEPLOY_DIR=public # this is the default output dir of Hugo
+    - GIT_DEPLOY_BRANCH=master # this is the target branch, replace by gh-pages for Project Pages
+    - GIT_DEPLOY_USERNAME="Dylan Pinn" # dummy name
+    - GIT_DEPLOY_EMAIL=dylan.pinn@gmail.com # replace by your email
