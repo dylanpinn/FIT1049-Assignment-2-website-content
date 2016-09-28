@@ -6,8 +6,8 @@ after_success:
 - "./deploy.sh"
 env:
   global:
-    - secure: "WBZX/bEsKDMjlhPAcArTSRIX7OiXWryzAie6WHw1wtn+yOaMV8jEBIvBkoYkRbMl3qHlJ/LZh6mjVv/xNs6s6j0R/Kg03mZkFanUNK2InwTx+Crg3KZF+6GDC0aO7dFVdTyDQY9AzQAlk8r1RmptfuDRtFemIJXWyUXz8dGQ/2+FMsyu9lADiCJghlFBJC9hBeYhdx8Ig/d/Vs3d8oYZUq2Gl2Qzdsf31vV0Zfod4gasf3/mCcquu0xqzhLBasnr0vNDe9TQoci0EVyLYejXeLG8IsJFsUPLdEFb9I4hg7b/4k2oyufenDY0vRgXA+/m96VDJjizrga89nzIH4Eu4uXh/qSi60j/6vCoD3RKXEcTxsjUJ/3QVsAkGMu2iSqZtLwvxx6uumRYJeVUziJuFcmrsjE0mHMg4FQSYEWKvZuYCQ5dhL2v2umVXVkF3StHr9RKzhApPo12F+a/48sc3qC+EWuzwRFWY+Qu/s2429l3K9ZLRh91E1+sbZmpe3mOh2fc3O16bnlOPYqoUYMyT6ZoNthisbnJFyrjn6wLfWy+vp/QKO/o3i3DqO28W31EoCn5+DYNmgHbhxHavHEtctEHPhgGbeFXbgIEHsOAs75Pks9kIvquiwQ+lneR4/KdrP/x676NI4XbICm7I0AZBwkmmbeKiwAiDAfpEPA14xM="
-    - GIT_DEPLOY_DIR=public # this is the default output dir of Hugo
-    - GIT_DEPLOY_BRANCH=master # this is the target branch, replace by gh-pages for Project Pages
-    - GIT_DEPLOY_USERNAME="Dylan Pinn" # dummy name
-    - GIT_DEPLOY_EMAIL=dylan.pinn@gmail.com # replace by your email
+  - secure: uDlMkZChM2zopqinrtLAPhNQKf0q/qqE6rokIulJT11W3V+kUZYmnpYIJ3hBDSxX9ftt6Vg1gOSpAc7FpxTvQPH886NcNOsPadXr6k+NjuYvn3lJoudAbfTyVqfMNIspb8yr4qNVd0qW6j2OZQhFphRcsTZoXBO990/NBFz20lqTAB4jrh5jSpkSVWakiBMY/JV+NUsczhvVMt4h3ZO9PNOG1AUml0oym3m15kCPu7OBGJ/Lbbp8AVvthGdT+5wn0gORnqYOoLcietNAdo/kXa32+Q5lfSrCAB53wJQVRtwpHI/neBJ27Cni7ucMwc14ibgtflBXjIph6OXuK0rwNksF90653eMgVbs4sGphjO/4DDSOKujziCCBj/J81puE6RqJG6Gro4mylRS1p6ARFrRqDDZCXLekyqjJj1m5BoVJbug0Rg+8oiDV5168OzMip+/nGWysrp9BejyQMxRcI/qA3fEjj3oQhC1/cyG/S/WRix9wvzstscH2djk4JYtbTW0Eo1MozIF8l+FqOJhV2DjxcQI+ZLh9Ig1O7aup5YPe8vESGyM7keww3ZSDnJaJRmMzNlKoikcAJ/Q8gI+bMcVBgM7FtpVCoe3I6qLCQOXSx4Lxab9zRtBhJVaWr1On9IoD3tQoSgoFIj/ys7b+7TsE0lJnABBL88lML7SiVQk=
+  - GIT_DEPLOY_DIR=public
+  - GIT_DEPLOY_BRANCH=master
+  - GIT_DEPLOY_USERNAME="Dylan Pinn"
+  - GIT_DEPLOY_EMAIL=dylan.pinn@gmail.com
