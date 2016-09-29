@@ -4,4 +4,4 @@ draft = false
 title = "Resource 1"
 +++
 
-## Test Resource
+This is a test resource.

@@ -12,7 +12,7 @@ paginate = 10
 [params]
   # To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-  name = "Your name"
+  name = "The Mysterious Larks"
   description = "Describe your website"
 
   # Format dates with Go's time formatting
@@ -51,7 +51,7 @@ paginate = 10
 
   [params.portfolio]
     hide  = false
-    title = "Recent Work"
+    title = "Resources"
 
     # The images and thumbnails are stored under static/images
     # Create and change subfolders as you like
@@ -92,11 +92,11 @@ paginate = 10
       description = "Lorem ipsum dolor sit amet."
 
   [params.recentposts]
-    hide  = false
+    hide  = true
     title = "Recent blog posts"
 
   [params.contact]
-    hide  = false
+    hide  = true
     title = "Get In Touch"
     content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
 
